@@ -2,7 +2,7 @@
 import React from 'react';
 import IntegrationTile from './components/IntegrationTile';
 import './App.css';
-import images from './components/images';
+import './images';
 
 function App() {
   const integrations = [
