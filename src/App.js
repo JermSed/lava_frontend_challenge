@@ -1,23 +1,35 @@
-import logo from './logo.svg';
+// App.js
+import React from 'react';
+import IntegrationTile from './components/IntegrationTile';
 import './App.css';
 
 function App() {
+  const integrations = [
+    { name: 'Figma', description: 'Stay up to date with your team’s latest designs.', image:'' },
+    { name: 'Google Drive', description: 'Access all of your documents and information.', image:'' },
+    { name: 'Slack', description: 'Communicate seamlessly with your teammates.', image:'' },
+    { name: 'Notion', description:'Sync all of your notes, team docs, and other important information.', image:''},
+    { name: 'Miro', description: 'Unlock the power of collaboration to distill insights from data.',image:''},
+    { name: 'Airtale', description: 'Keep your data organized in a spreadsheet-database format.',image:''},
+    { name: 'Confluence', description: 'Create content, collaborate on work, and organize and share information.', image:''},
+    { name: 'Dovetail', description: 'Organize and tag your research in a collaborative platform.', image:''}
+  ];
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Hive</h1>
       </header>
+      <div className="Integration-grid">
+          <h1>Connect your tools</h1>
+        {integrations.map((integration, index) => (
+          <IntegrationTile key={index} name={integration.name} description={integration.description} image = {integration.image} />
+        ))}
+      </div>
+      <div className="Actions">
+        <button className="Back-button">Back</button>
+        <button className="Finish-button">Finish</button>
+      </div>
     </div>
   );
 }
