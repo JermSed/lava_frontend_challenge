@@ -1,28 +1,64 @@
 .App {
   text-align: center;
+  background: radial-gradient(circle at center 90%, rgba(210, 143, 241, 0.5),#ffff );
+}
+.App-body{
+  text-align: left;
+  color: #000;
+  margin: 30px;
+  font-family: 'Helvetica', ;
+  font-size: 30px;
+  backdrop-filter: blur(450px);
 }
 
 .App-header {
-  background-color: #f5f5f5;
-  padding: 20px;
-  color: black;
+  background-color: #ffff;
+  padding: 10px;
+  padding-left: 70px;
+  color: #9b20e7;
+  text-align: left;
 }
 
 .Integration-grid {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  row-gap: 36.78px;
+  column-gap: 103px;
   padding: 20px;
+  width: 80%;
+  margin-left: 30px;
+
+}
+
+.Integration-image {
+  max-width: 30px; 
+  height: 30px;
+  
 }
 
 .Actions {
   display: flex;
-  justify-content: space-between;
-  margin: 20px;
+  justify-content: flex-start;
+  padding: 20px;
 }
 
-.Back-button, .Finish-button {
-  padding: 10px 20px;
+.Back-button{
+  margin-right: 40px;
+  padding:10px 20px;
+  font-size:16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
 }
-
-/* Add more styling as needed */
+.Finish-button{
+  margin-right: 10px;
+  padding:10px 20px;
+  font-size:16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #000;
+  color: #FFFF;
+}
