@@ -2,17 +2,18 @@
 import React from 'react';
 import IntegrationTile from './components/IntegrationTile';
 import './App.css';
+import images from './components/images';
 
 function App() {
   const integrations = [
-    { name: 'Figma', description: 'Stay up to date with your team’s latest designs.', image:'' },
-    { name: 'Google Drive', description: 'Access all of your documents and information.', image:'' },
-    { name: 'Slack', description: 'Communicate seamlessly with your teammates.', image:'' },
-    { name: 'Notion', description:'Sync all of your notes, team docs, and other important information.', image:''},
-    { name: 'Miro', description: 'Unlock the power of collaboration to distill insights from data.',image:''},
-    { name: 'Airtale', description: 'Keep your data organized in a spreadsheet-database format.',image:''},
-    { name: 'Confluence', description: 'Create content, collaborate on work, and organize and share information.', image:''},
-    { name: 'Dovetail', description: 'Organize and tag your research in a collaborative platform.', image:''}
+    { name: 'Figma', description: 'Stay up to date with your team’s latest designs.', image:'figma.png' },
+    { name: 'Google Drive', description: 'Access all of your documents and information.', image:'google_drive.png' },
+    { name: 'Slack', description: 'Communicate seamlessly with your teammates.', image:'slack.png' },
+    { name: 'Notion', description:'Sync all of your notes, team docs, and other important information.', image:'notion.png'},
+    { name: 'Miro', description: 'Unlock the power of collaboration to distill insights from data.',image:'miro.png'},
+    { name: 'Airtable', description: 'Keep your data organized in a spreadsheet-database format.',image:'airtable.png'},
+    { name: 'Confluence', description: 'Create content, collaborate on work, and organize and share information.', image:'confluence.png'},
+    { name: 'Dovetail', description: 'Organize and tag your research in a collaborative platform.', image:'dovetail.png'}
   ];
 
   return (
